@@ -26,7 +26,7 @@ def drawPattern():
 
 w = Tk()
 w.title("PATTERN")
-w.geometry("500x500")
+w.geometry("200x300")
 w.columnconfigure(0,weight=1)
 
 form = ttk.Frame(w, padding=10)
@@ -45,7 +45,7 @@ l1.grid(row=0, column=0)
 l2.grid(row=1, column=0)
 e1.grid(row=0, column=1)
 e2.grid(row=1, column=1)
-b1.grid(row=2, column=0, columnspan=2)
+b1.grid(row=2, column=0, columnspan=2, sticky="we")
 l3.grid(row=4, column=0, columnspan=2, padx=5, pady=5)
 
 w.mainloop()
